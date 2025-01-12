@@ -1,0 +1,57 @@
+
+.form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+#taskList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.taskListElement {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    background: #808080cf;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.taskListLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.task-id {
+    font-size: 15px;
+    color: brown;
+}
+.active-task{
+    background: #7ff78bcf;
+}
+
+/* Творчі завдання */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.gallery img {
+    max-width: 200px;
+}
+.gallery-modal-img {
+    width: 400px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+}
