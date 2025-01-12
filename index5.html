@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-2 Lesson 5</title>
+    <link rel="shortcut icon" href="./src/img/javascript_favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/style5.css">
+    <link rel="stylesheet" href="./src/scss/main.css">
+    <link rel="stylesheet" href="./src/js/pnotify.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/pnotify/5.2.0/PNotify.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="js-title">JS-5</h1>
+        <h3 class="lesson-number">Lesson 5</h3>
+        <img class="decor-svg" src="./src/img/new.svg" alt="new">
+    </header>
+    <main class="main">
+        <div class="lesson-box">
+            <h3 class="lesson-box__title">Choose a lesson</h3>
+            <div class="lesson-group">
+                <a class="lesson-group__number" href="../index.html">1</a>
+                <a class="lesson-group__number" href="./index2.html">2</a>
+                <a class="lesson-group__number" href="./index3.html">3</a>
+                <a class="lesson-group__number" href="./index4.html">4</a>
+                <a class="lesson-group__number lesson-group__number--active" href="./index5.html">5</a>
+            </div>
+        </div>
+        <div class="hw-group">
+            <div class="hw-group__element">
+                <h1>Task List</h1>
+                <div class="form-box">
+                    <form>
+                        <label for="newTask">New task:</label>
+                        <input type="text" id="newTask">
+                        <button type="button" id="addTask">Add</button>
+                    </form>
+                    <ul id="taskList"></ul>
+                </div>
+            </div>
+            <div class="hw-group__element">
+                <ul class="gallery">
+                    <li>
+                        <img src="https://images.pexels.com/photos/10905331/pexels-photo-10905331.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" data-index="1">
+                    </li>
+                    <li>
+                        <img src="https://images.pexels.com/photos/11895469/pexels-photo-11895469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" data-index="2">
+                    </li>
+                    <li>
+                        <img src="https://images.pexels.com/photos/16286379/pexels-photo-16286379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" data-index="3">
+                    </li>
+                </ul>
+            </div>
+            <div class="hw-group__element">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="hw-group__element"  style="padding: 20px 0; background-color: rgb(215, 243, 221); border-radius: 10px; border: 2px solid black; margin: 20px 0; display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 20px;">
+                <p id="game-marke" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 30px; font-style: oblique; color: darkblue;"></p>
+                <p id="game-key" style="font-family: 'Courier New', Courier, monospace; font-size: 20px;"></p>
+                <p id="game-status" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; font-style: oblique; color: dodgerblue;"></p>
+                <button type="button" id="new-game_btn" style="width: 150px; height: 50px; border: none; border-radius: 5px; background-color: deepskyblue; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 15px; font-style: oblique;">New Game</button>
+            </div>
+            <div class="hw-group__element"> 
+                <canvas id="sales-chart"></canvas>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/5.2.0/PNotify.js"></script>
+    <script type="module" src="./src/js/pnotify.js"></script>
+    <script type="module" src="./src/js/index5.js"></script>
+</body>
+</html>
