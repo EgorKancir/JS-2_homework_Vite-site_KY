@@ -1,4 +1,3 @@
-// import { resolve } from 'chart.js/helpers'
 import { resolve } from 'path'
 import {defineConfig} from 'vite'
 
