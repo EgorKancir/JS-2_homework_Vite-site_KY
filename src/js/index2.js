@@ -17,12 +17,12 @@ inputThrottle.addEventListener("input", _.throttle(() => {
 
 const inputDebounce = document.getElementById("input-debounce");
 
-function randomText(text) {
+function randomText2(text) {
     console.log(text);
 }
 
 inputDebounce.addEventListener("input", _.debounce(() => { 
-    randomText(inputDebounce.value)
+    randomText2(inputDebounce.value)
     }, 5000)
 );
 
@@ -30,13 +30,13 @@ inputDebounce.addEventListener("input", _.debounce(() => {
 
 let counterScroll = 0;
 
-function randomText(text) {
+function randomText3(text) {
     console.log(text);
 }
 
 window.addEventListener("scroll", _.debounce(() => { 
     counterScroll += 1;
-    randomText(`Виклик ${counterScroll}`)
+    randomText3(`Виклик ${counterScroll}`)
     }, 100)
 );
 
