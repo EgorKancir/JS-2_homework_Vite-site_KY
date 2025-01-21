@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-2 Lesson 5</title>
+    <link rel="shortcut icon" href="/JS-2_homework_Vite-site_KY/assets/javascript_favicon-CQAGjtum.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="data:text/javascript;base64,Ly8gaW1wb3J0ICdAcG5vdGlmeS9jb3JlL2Rpc3QvQnJpZ2h0VGhlbWUuY3NzJzsKLy8gLy8gSFcKCi8vIC8vIDEKLy8gbGV0IGdhbWVNYXJrZSA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJnYW1lLW1hcmtlIik7Ci8vIGNvbnN0IGdhbWVLZXkgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiZ2FtZS1rZXkiKTsKLy8gbGV0IGdhbWVDb25zb2wgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiZ2FtZS1zdGF0dXMiKTsKLy8gY29uc3QgbmV3R2FtZUJ0biA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJuZXctZ2FtZV9idG4iKTsKLy8gY29uc3QgZ2FtZUxpc3QgPSBbJ3QnLCAnRCcsICdoJywgJ0wnLCAncCcsICdZJywgJ2cnLCAndScsICdRJywgJ0UnLCAnTicsICdEJ107Ci8vIGxldCBjdXJyZW50S2V5SW5kZXggPSAwOwoKLy8gZnVuY3Rpb24gc2hvd1N0YWNrTW9kYWwodHlwZSkgewovLyAgICAgaWYgKHR5cGVvZiB3aW5kb3cuc3RhY2tNb2RhbCA9PT0gJ3VuZGVmaW5lZCcpIHsKLy8gICAgICAgICB3aW5kb3cuc3RhY2tNb2RhbCA9IG5ldyBQTm90aWZ5LlN0YWNrKHsKLy8gICAgICAgICAgICAgZGlyMTogJ3VwJywKLy8gICAgICAgICAgICAgZmlyc3Rwb3MxOiAyNSwKLy8gICAgICAgICAgICAgcHVzaDogJ3RvcCcsCi8vICAgICAgICAgICAgIG1vZGFsOiB0cnVlLAovLyAgICAgICAgICAgICBtYXhPcGVuOiBJbmZpbml0eQovLyAgICAgICAgIH0pOwovLyAgICAgfQoKLy8gICAgIGNvbnN0IG9wdHMgPSB7Ci8vICAgICAgICAgdGl0bGU6ICdPdmVyIEhlcmUnLAovLyAgICAgICAgIHRleHQ6ICJDaGVjayBtZSBvdXQuIEknbSBpbiBhIGRpZmZlcmVudCBzdGFjay4iLAovLyAgICAgICAgIHN0YWNrOiB3aW5kb3cuc3RhY2tNb2RhbCwKLy8gICAgICAgICBtb2R1bGVzOiBuZXcgTWFwKFsKLy8gICAgICAgICAgICAgLi4uUE5vdGlmeS5kZWZhdWx0TW9kdWxlcywKLy8gICAgICAgICAgICAgWwovLyAgICAgICAgICAgICAgICAgUE5vdGlmeUNvbmZpcm0sCi8vICAgICAgICAgICAgICAgICB7Ci8vICAgICAgICAgICAgICAgICAgICAgY29uZmlybTogdHJ1ZSwKLy8gICAgICAgICAgICAgICAgICAgICBidXR0b25zOiBbewovLyAgICAgICAgICAgICAgICAgICAgICAgICB0ZXh0OiAnQW5vdGhlcicsCi8vICAgICAgICAgICAgICAgICAgICAgICAgIHByaW1hcnk6IHRydWUsCi8vICAgICAgICAgICAgICAgICAgICAgICAgIGNsaWNrOiAoKSA9PiBzaG93U3RhY2tNb2RhbCh0eXBlKQovLyAgICAgICAgICAgICAgICAgICAgIH1dCi8vICAgICAgICAgICAgICAgICB9Ci8vICAgICAgICAgICAgIF0KLy8gICAgICAgICBdKQovLyAgICAgfTsKLy8gICAgIHN3aXRjaCAodHlwZSkgewovLyAgICAgICAgIGNhc2UgJ2Vycm9yJzoKLy8gICAgICAgICAgICAgb3B0cy50aXRsZSA9ICdPaCBObyc7Ci8vICAgICAgICAgICAgIG9wdHMudGV4dCA9ICdXYXRjaCBvdXQgZm9yIHRoYXQgd2F0ZXIgdG93ZXIhJzsKLy8gICAgICAgICAgICAgb3B0cy50eXBlID0gJ2Vycm9yJzsKLy8gICAgICAgICAgICAgYnJlYWs7Ci8vICAgICAgICAgY2FzZSAnaW5mbyc6Ci8vICAgICAgICAgICAgIG9wdHMudGl0bGUgPSAnQnJlYWtpbmcgTmV3cyc7Ci8vICAgICAgICAgICAgIG9wdHMudGV4dCA9ICdIYXZlIHlvdSBtZXQgVGVkPyc7Ci8vICAgICAgICAgICAgIG9wdHMudHlwZSA9ICdpbmZvJzsKLy8gICAgICAgICAgICAgYnJlYWs7Ci8vICAgICAgICAgY2FzZSAnc3VjY2Vzcyc6Ci8vICAgICAgICAgICAgIG9wdHMudGl0bGUgPSAnR29vZCBOZXdzIEV2ZXJ5b25lJzsKLy8gICAgICAgICAgICAgb3B0cy50ZXh0ID0gIkkndmUgaW52ZW50ZWQgYSBkZXZpY2UgdGhhdCBiaXRlcyBzaGlueSBtZXRhbCBhc3Nlcy4iOwovLyAgICAgICAgICAgICBvcHRzLnR5cGUgPSAnc3VjY2Vzcyc7Ci8vICAgICAgICAgICAgIGJyZWFrOwovLyAgICAgfQoKLy8gICAgIFBOb3RpZnkuYWxlcnQob3B0cyk7Ci8vIH0KCi8vIGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoImtleWRvd24iLCAoZXZlbnQpID0+IHsKLy8gICAgIGlmIChldmVudC5rZXkgPT09ICJTaGlmdCIgfHwgZXZlbnQua2V5ID09PSAiQ29udHJvbCIgfHwgZXZlbnQua2V5ID09PSAiQWx0IiB8fCBldmVudC5rZXkgPT09ICJDYXBzTG9jayIpIHsKLy8gICAgICAgICByZXR1cm47IAovLyAgICAgfQovLyAgICAgbGV0IHJpZ2h0S2V5ID0gZ2FtZUxpc3RbY3VycmVudEtleUluZGV4XTsKLy8gICAgIGxldCBuZXh0S2V5ID0gZ2FtZUxpc3RbY3VycmVudEtleUluZGV4ICsgMV0gfHwgJ9C90LXQvNCw0ZQnOyAKLy8gICAgIGdhbWVNYXJrZS50ZXh0Q29udGVudCA9IGDQndCw0YHRgtGD0L/QvdCwINC60LvQsNCy0ZbRiNCwID4+PiAke25leHRLZXl9IDw8PGA7Ci8vICAgICBpZiAocmlnaHRLZXkgPT09IGV2ZW50LmtleSkgewovLyAgICAgICAgIGN1cnJlbnRLZXlJbmRleCArPSAxOwovLyAgICAgICAgIGdhbWVDb25zb2wudGV4dENvbnRlbnQgPSAn0KfRg9C00L7QstC+INGC0LDQuiDRgtGA0LjQvNCw0YLQuCEhISc7Ci8vICAgICAgICAgZ2FtZUNvbnNvbC5zdHlsZS5jb2xvciA9ICdncmVlbic7Ci8vICAgICB9IGVsc2UgewovLyAgICAgICAgIGN1cnJlbnRLZXlJbmRleCA9IDA7Ci8vICAgICAgICAgZ2FtZUNvbnNvbC50ZXh0Q29udGVudCA9ICfQo9Cf0KEhINCS0YHQtSDRgdC/0L7Rh9Cw0YLQutGDLi4uJzsKLy8gICAgICAgICBnYW1lQ29uc29sLnN0eWxlLmNvbG9yID0gJ3JlZCc7Ci8vICAgICAgICAgc2hvd1N0YWNrTW9kYWwoJ2Vycm9yJyk7Ci8vICAgICB9Ci8vICAgICBpZiAoY3VycmVudEtleUluZGV4ID49IGdhbWVMaXN0Lmxlbmd0aCkgewovLyAgICAgICAgIGdhbWVDb25zb2wudGV4dENvbnRlbnQgPSAn0JLRltGC0LDRlNC80L4sINGC0Lgg0L/RgNC+0LnRiNC+0LIg0LPRgNGDISc7Ci8vICAgICAgICAgZ2FtZUNvbnNvbC5zdHlsZS5jb2xvciA9ICdibHVlJzsKLy8gICAgICAgICBjdXJyZW50S2V5SW5kZXggPSAwOyAKLy8gICAgICAgICBzaG93U3RhY2tNb2RhbCgnZXJyb3InKTsKLy8gICAgIH0KLy8gfSk7CgovLyBnYW1lS2V5LnRleHRDb250ZW50ID0gZ2FtZUxpc3Quam9pbignLCAnKTsgCi8vIGdhbWVDb25zb2wudGV4dENvbnRlbnQgPSAnICc7Ci8vIG5ld0dhbWVCdG4uYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCAoKSA9PiB7Ci8vICAgICBjdXJyZW50S2V5SW5kZXggPSAwOwovLyAgICAgZ2FtZUNvbnNvbC50ZXh0Q29udGVudCA9ICfQndC+0LLQsCDQs9GA0LAg0YDQvtC30L/QvtGH0LDRgtCwISc7Ci8vICAgICBnYW1lQ29uc29sLnN0eWxlLmNvbG9yID0gJ2JsYWNrJzsKLy8gICAgIGdhbWVNYXJrZS50ZXh0Q29udGVudCA9IGDQndCw0YHRgtGD0L/QvdCwINC60LvQsNCy0ZbRiNCwID4+PiAke2dhbWVMaXN0W2N1cnJlbnRLZXlJbmRleF19IDw8PGA7Ci8vIH0pOw==">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/pnotify/5.2.0/PNotify.css" rel="stylesheet">
+  <script type="module" crossorigin src="/JS-2_homework_Vite-site_KY/assets/index5-Ddu1Na3N.js"></script>
+  <link rel="modulepreload" crossorigin href="/JS-2_homework_Vite-site_KY/assets/style-CgATJ9GZ.js">
+  <link rel="stylesheet" crossorigin href="/JS-2_homework_Vite-site_KY/assets/style-CUgPWGWm.css">
+  <link rel="stylesheet" crossorigin href="/JS-2_homework_Vite-site_KY/assets/index5-D5oZXGMb.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="js-title">JS-5</h1>
+        <h3 class="lesson-number">Lesson 5</h3>
+        <img class="decor-svg" src="data:image/svg+xml,%3csvg%20width='35'%20height='22'%20viewBox='0%200%2035%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.2'%20y='0.2'%20width='34.6'%20height='21.6'%20rx='5.8'%20fill='%238C32BD'%20stroke='black'%20stroke-width='0.4'/%3e%3cpath%20d='M4.404%2015.12C4.164%2015.12%203.972%2015.056%203.828%2014.928C3.684%2014.8%203.612%2014.624%203.612%2014.4V9.876C3.612%208.812%203.944%207.98%204.608%207.38C5.272%206.78%206.192%206.48%207.368%206.48C8.544%206.48%209.464%206.78%2010.128%207.38C10.792%207.98%2011.124%208.812%2011.124%209.876V14.4C11.124%2014.624%2011.052%2014.8%2010.908%2014.928C10.764%2015.056%2010.572%2015.12%2010.332%2015.12C10.092%2015.12%209.896%2015.056%209.744%2014.928C9.6%2014.792%209.528%2014.616%209.528%2014.4V9.84C9.528%209.16%209.344%208.64%208.976%208.28C8.608%207.92%208.072%207.74%207.368%207.74C6.664%207.74%206.128%207.92%205.76%208.28C5.392%208.64%205.208%209.16%205.208%209.84V14.4C5.208%2014.616%205.132%2014.792%204.98%2014.928C4.836%2015.056%204.644%2015.12%204.404%2015.12ZM14.3225%2015C13.7145%2015%2013.2425%2014.84%2012.9065%2014.52C12.5705%2014.2%2012.4025%2013.752%2012.4025%2013.176V8.376C12.4025%207.816%2012.5625%207.38%2012.8825%207.068C13.2105%206.756%2013.6625%206.6%2014.2385%206.6H17.9705C18.2105%206.6%2018.3945%206.656%2018.5225%206.768C18.6505%206.872%2018.7145%207.024%2018.7145%207.224C18.7145%207.416%2018.6465%207.568%2018.5105%207.68C18.3825%207.784%2018.2025%207.836%2017.9705%207.836H14.5145C14.3545%207.836%2014.2265%207.888%2014.1305%207.992C14.0425%208.096%2013.9985%208.24%2013.9985%208.424V10.092H17.0585C17.2985%2010.092%2017.4825%2010.148%2017.6105%2010.26C17.7385%2010.364%2017.8025%2010.516%2017.8025%2010.716C17.8025%2010.908%2017.7345%2011.06%2017.5985%2011.172C17.4705%2011.276%2017.2905%2011.328%2017.0585%2011.328H13.9985V13.176C13.9985%2013.36%2014.0425%2013.504%2014.1305%2013.608C14.2265%2013.712%2014.3545%2013.764%2014.5145%2013.764H18.2345C18.4745%2013.764%2018.6585%2013.82%2018.7865%2013.932C18.9145%2014.036%2018.9785%2014.188%2018.9785%2014.388C18.9785%2014.58%2018.9105%2014.732%2018.7745%2014.844C18.6465%2014.948%2018.4665%2015%2018.2345%2015H14.3225ZM22.9432%2015.12C22.4952%2015.12%2022.1352%2014.984%2021.8632%2014.712C21.5992%2014.432%2021.4112%2013.996%2021.2992%2013.404L20.1112%207.296C20.0952%207.2%2020.0872%207.132%2020.0872%207.092C20.0872%206.892%2020.1512%206.74%2020.2792%206.636C20.4152%206.532%2020.5992%206.48%2020.8312%206.48C21.3112%206.48%2021.5912%206.692%2021.6712%207.116L22.8112%2013.536C22.8432%2013.664%2022.8712%2013.752%2022.8952%2013.8C22.9192%2013.84%2022.9512%2013.86%2022.9912%2013.86C23.0872%2013.86%2023.1472%2013.756%2023.1712%2013.548L23.9272%207.8C23.9832%207.384%2024.1352%207.06%2024.3832%206.828C24.6392%206.596%2024.9632%206.48%2025.3552%206.48C25.7472%206.48%2026.0672%206.596%2026.3152%206.828C26.5712%207.06%2026.7272%207.384%2026.7832%207.8L27.5392%2013.548C27.5632%2013.756%2027.6232%2013.86%2027.7192%2013.86C27.7592%2013.86%2027.7912%2013.84%2027.8152%2013.8C27.8392%2013.752%2027.8672%2013.664%2027.8992%2013.536L29.0392%207.116C29.1192%206.692%2029.3992%206.48%2029.8792%206.48C30.1112%206.48%2030.2912%206.532%2030.4192%206.636C30.5552%206.74%2030.6232%206.892%2030.6232%207.092C30.6232%207.132%2030.6152%207.2%2030.5992%207.296L29.4112%2013.404C29.2992%2013.996%2029.1072%2014.432%2028.8352%2014.712C28.5712%2014.984%2028.2152%2015.12%2027.7672%2015.12C27.3192%2015.12%2026.9712%2014.984%2026.7232%2014.712C26.4752%2014.44%2026.3112%2014.016%2026.2312%2013.44L25.5232%208.064C25.5072%207.944%2025.4872%207.86%2025.4632%207.812C25.4392%207.764%2025.4032%207.74%2025.3552%207.74C25.3072%207.74%2025.2712%207.764%2025.2472%207.812C25.2232%207.86%2025.2032%207.944%2025.1872%208.064L24.4792%2013.44C24.3992%2014.016%2024.2352%2014.44%2023.9872%2014.712C23.7392%2014.984%2023.3912%2015.12%2022.9432%2015.12Z'%20fill='white'/%3e%3c/svg%3e" alt="new">
+    </header>
+    <main class="main">
+        <div class="lesson-box">
+            <h3 class="lesson-box__title">Choose a lesson</h3>
+            <div class="lesson-group">
+                <a class="lesson-group__number" href="./index.html">1</a>
+                <a class="lesson-group__number" href="./index2.html">2</a>
+                <a class="lesson-group__number" href="./index3.html">3</a>
+                <a class="lesson-group__number" href="./index4.html">4</a>
+                <a class="lesson-group__number lesson-group__number--active" href="./index5.html">5</a>
+            </div>
+        </div>
+        <div class="hw-group">
+            <div class="hw-group__element">
+                <h1>Task List</h1>
+                <div class="form-box">
+                    <form>
+                        <label for="newTask">New task:</label>
+                        <input type="text" id="newTask">
+                        <button type="button" id="addTask">Add</button>
+                    </form>
+                    <ul id="taskList"></ul>
+                </div>
+            </div>
+            <div class="hw-group__element">
+                <ul class="gallery">
+                    <li>
+                        <img src="https://images.pexels.com/photos/10905331/pexels-photo-10905331.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" data-index="1">
+                    </li>
+                    <li>
+                        <img src="https://images.pexels.com/photos/11895469/pexels-photo-11895469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" data-index="2">
+                    </li>
+                    <li>
+                        <img src="https://images.pexels.com/photos/16286379/pexels-photo-16286379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" data-index="3">
+                    </li>
+                </ul>
+            </div>
+            <div class="hw-group__element">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="hw-group__element"  style="padding: 20px 0; background-color: rgb(215, 243, 221); border-radius: 10px; border: 2px solid black; margin: 20px 0; display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 20px;">
+                <p id="game-marke" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 30px; font-style: oblique; color: darkblue;"></p>
+                <p id="game-key" style="font-family: 'Courier New', Courier, monospace; font-size: 20px;"></p>
+                <p id="game-status" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; font-style: oblique; color: dodgerblue;"></p>
+                <button type="button" id="new-game_btn" style="width: 150px; height: 50px; border: none; border-radius: 5px; background-color: deepskyblue; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 15px; font-style: oblique;">New Game</button>
+            </div>
+            <div class="hw-group__element"> 
+                <canvas id="sales-chart"></canvas>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/5.2.0/PNotify.js"></script>
+</body>
+</html>

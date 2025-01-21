@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-2 Lesson 3</title>
+    <link rel="shortcut icon" href="/JS-2_homework_Vite-site_KY/assets/javascript_favicon-CQAGjtum.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/JS-2_homework_Vite-site_KY/assets/index3-WAYcTgJE.js"></script>
+  <link rel="modulepreload" crossorigin href="/JS-2_homework_Vite-site_KY/assets/style-CgATJ9GZ.js">
+  <link rel="stylesheet" crossorigin href="/JS-2_homework_Vite-site_KY/assets/style-CUgPWGWm.css">
+  <link rel="stylesheet" crossorigin href="/JS-2_homework_Vite-site_KY/assets/style3-B0k3Yku7.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="js-title">JS-3</h1>
+        <h3 class="lesson-number">Lesson 3</h3>
+        <img class="decor-svg" src="data:image/svg+xml,%3csvg%20width='35'%20height='22'%20viewBox='0%200%2035%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.2'%20y='0.2'%20width='34.6'%20height='21.6'%20rx='5.8'%20fill='%238C32BD'%20stroke='black'%20stroke-width='0.4'/%3e%3cpath%20d='M4.404%2015.12C4.164%2015.12%203.972%2015.056%203.828%2014.928C3.684%2014.8%203.612%2014.624%203.612%2014.4V9.876C3.612%208.812%203.944%207.98%204.608%207.38C5.272%206.78%206.192%206.48%207.368%206.48C8.544%206.48%209.464%206.78%2010.128%207.38C10.792%207.98%2011.124%208.812%2011.124%209.876V14.4C11.124%2014.624%2011.052%2014.8%2010.908%2014.928C10.764%2015.056%2010.572%2015.12%2010.332%2015.12C10.092%2015.12%209.896%2015.056%209.744%2014.928C9.6%2014.792%209.528%2014.616%209.528%2014.4V9.84C9.528%209.16%209.344%208.64%208.976%208.28C8.608%207.92%208.072%207.74%207.368%207.74C6.664%207.74%206.128%207.92%205.76%208.28C5.392%208.64%205.208%209.16%205.208%209.84V14.4C5.208%2014.616%205.132%2014.792%204.98%2014.928C4.836%2015.056%204.644%2015.12%204.404%2015.12ZM14.3225%2015C13.7145%2015%2013.2425%2014.84%2012.9065%2014.52C12.5705%2014.2%2012.4025%2013.752%2012.4025%2013.176V8.376C12.4025%207.816%2012.5625%207.38%2012.8825%207.068C13.2105%206.756%2013.6625%206.6%2014.2385%206.6H17.9705C18.2105%206.6%2018.3945%206.656%2018.5225%206.768C18.6505%206.872%2018.7145%207.024%2018.7145%207.224C18.7145%207.416%2018.6465%207.568%2018.5105%207.68C18.3825%207.784%2018.2025%207.836%2017.9705%207.836H14.5145C14.3545%207.836%2014.2265%207.888%2014.1305%207.992C14.0425%208.096%2013.9985%208.24%2013.9985%208.424V10.092H17.0585C17.2985%2010.092%2017.4825%2010.148%2017.6105%2010.26C17.7385%2010.364%2017.8025%2010.516%2017.8025%2010.716C17.8025%2010.908%2017.7345%2011.06%2017.5985%2011.172C17.4705%2011.276%2017.2905%2011.328%2017.0585%2011.328H13.9985V13.176C13.9985%2013.36%2014.0425%2013.504%2014.1305%2013.608C14.2265%2013.712%2014.3545%2013.764%2014.5145%2013.764H18.2345C18.4745%2013.764%2018.6585%2013.82%2018.7865%2013.932C18.9145%2014.036%2018.9785%2014.188%2018.9785%2014.388C18.9785%2014.58%2018.9105%2014.732%2018.7745%2014.844C18.6465%2014.948%2018.4665%2015%2018.2345%2015H14.3225ZM22.9432%2015.12C22.4952%2015.12%2022.1352%2014.984%2021.8632%2014.712C21.5992%2014.432%2021.4112%2013.996%2021.2992%2013.404L20.1112%207.296C20.0952%207.2%2020.0872%207.132%2020.0872%207.092C20.0872%206.892%2020.1512%206.74%2020.2792%206.636C20.4152%206.532%2020.5992%206.48%2020.8312%206.48C21.3112%206.48%2021.5912%206.692%2021.6712%207.116L22.8112%2013.536C22.8432%2013.664%2022.8712%2013.752%2022.8952%2013.8C22.9192%2013.84%2022.9512%2013.86%2022.9912%2013.86C23.0872%2013.86%2023.1472%2013.756%2023.1712%2013.548L23.9272%207.8C23.9832%207.384%2024.1352%207.06%2024.3832%206.828C24.6392%206.596%2024.9632%206.48%2025.3552%206.48C25.7472%206.48%2026.0672%206.596%2026.3152%206.828C26.5712%207.06%2026.7272%207.384%2026.7832%207.8L27.5392%2013.548C27.5632%2013.756%2027.6232%2013.86%2027.7192%2013.86C27.7592%2013.86%2027.7912%2013.84%2027.8152%2013.8C27.8392%2013.752%2027.8672%2013.664%2027.8992%2013.536L29.0392%207.116C29.1192%206.692%2029.3992%206.48%2029.8792%206.48C30.1112%206.48%2030.2912%206.532%2030.4192%206.636C30.5552%206.74%2030.6232%206.892%2030.6232%207.092C30.6232%207.132%2030.6152%207.2%2030.5992%207.296L29.4112%2013.404C29.2992%2013.996%2029.1072%2014.432%2028.8352%2014.712C28.5712%2014.984%2028.2152%2015.12%2027.7672%2015.12C27.3192%2015.12%2026.9712%2014.984%2026.7232%2014.712C26.4752%2014.44%2026.3112%2014.016%2026.2312%2013.44L25.5232%208.064C25.5072%207.944%2025.4872%207.86%2025.4632%207.812C25.4392%207.764%2025.4032%207.74%2025.3552%207.74C25.3072%207.74%2025.2712%207.764%2025.2472%207.812C25.2232%207.86%2025.2032%207.944%2025.1872%208.064L24.4792%2013.44C24.3992%2014.016%2024.2352%2014.44%2023.9872%2014.712C23.7392%2014.984%2023.3912%2015.12%2022.9432%2015.12Z'%20fill='white'/%3e%3c/svg%3e" alt="new">
+    </header>
+    <main class="main">
+        <div class="lesson-box">
+            <h3 class="lesson-box__title">Choose a lesson</h3>
+            <div class="lesson-group">
+                <a class="lesson-group__number" href="./index.html">1</a>
+                <a class="lesson-group__number" href="./index2.html">2</a>
+                <a class="lesson-group__number lesson-group__number--active" href="./index3.html">3</a>
+                <a class="lesson-group__number" href="./index4.html">4</a>
+                <a class="lesson-group__number" href="./index5.html">5</a>
+            </div>
+        </div>
+        <div class="hw-group">
+            <div class="hw-group__element">
+                <ul class="fruits-list">
+                    <li class="fruit-element">
+                        <img src="https://media.acc.cv.ua/news/article/2024/02/26/100446/7up7Ivn43ZNDvPeY13RY.w575.jpg" alt="Fruit 1">
+                        <h3>Fruit 1</h3>
+                    </li>
+                    <li class="fruit-element">
+                        <img src="https://media.acc.cv.ua/news/article/2024/02/26/100446/7up7Ivn43ZNDvPeY13RY.w575.jpg" alt="Fruit 2">
+                        <h3>Fruit 2</h3>
+                    </li>
+                    <li class="fruit-element">
+                        <img src="https://media.acc.cv.ua/news/article/2024/02/26/100446/7up7Ivn43ZNDvPeY13RY.w575.jpg" alt="Fruit 2">
+                        <h3>Fruit 3</h3>
+                    </li>
+                    <li class="fruit-element">
+                        <img src="https://media.acc.cv.ua/news/article/2024/02/26/100446/7up7Ivn43ZNDvPeY13RY.w575.jpg" alt="Fruit 2">
+                        <h3>Fruit 4</h3>
+                    </li>
+                    <li class="fruit-element">
+                        <img src="https://media.acc.cv.ua/news/article/2024/02/26/100446/7up7Ivn43ZNDvPeY13RY.w575.jpg" alt="Fruit 2">
+                        <h3>Fruit 5</h3>
+                    </li>
+                    <li class="fruit-element">
+                        <img src="https://media.acc.cv.ua/news/article/2024/02/26/100446/7up7Ivn43ZNDvPeY13RY.w575.jpg" alt="Fruit 2">
+                        <h3>Fruit 6</h3>
+                    </li>
+                    <li class="fruit-element">
+                        <img src="https://media.acc.cv.ua/news/article/2024/02/26/100446/7up7Ivn43ZNDvPeY13RY.w575.jpg" alt="Fruit 2">
+                        <h3>Fruit 7</h3>
+                    </li>
+                    <li class="fruit-element">
+                        <img src="https://media.acc.cv.ua/news/article/2024/02/26/100446/7up7Ivn43ZNDvPeY13RY.w575.jpg" alt="Fruit 2">
+                        <h3>Fruit 8</h3>
+                    </li>
+                    <li class="fruit-element">
+                        <img src="https://media.acc.cv.ua/news/article/2024/02/26/100446/7up7Ivn43ZNDvPeY13RY.w575.jpg" alt="Fruit 2">
+                        <h3>Fruit 9</h3>
+                    </li>
+                    <li class="fruit-element">
+                        <img src="https://media.acc.cv.ua/news/article/2024/02/26/100446/7up7Ivn43ZNDvPeY13RY.w575.jpg" alt="Fruit 2">
+                        <h3>Fruit 10</h3>
+                    </li>
+                    <!-- Додайте інші елементи li для інших фруктів -->
+                </ul>
+            </div>
+            <div class="hw-group__element">
+                <ul class="fruits-group">
+                    <li class="fruits-group__element">
+                        <img src="https://media.acc.cv.ua/news/article/2024/02/26/100446/7up7Ivn43ZNDvPeY13RY.w575.jpg" alt="Fruit">
+                        <h3>Apple</h3>
+                    </li>
+                    <li class="fruits-group__element">
+                        <img src="https://media.acc.cv.ua/news/article/2024/02/26/100446/7up7Ivn43ZNDvPeY13RY.w575.jpg" alt="Fruit">
+                        <h3>Banana</h3>
+                    </li>
+                    <li class="fruits-group__element">
+                        <img src="https://media.acc.cv.ua/news/article/2024/02/26/100446/7up7Ivn43ZNDvPeY13RY.w575.jpg" alt="Fruit">
+                        <h3>Cherry</h3>
+                    </li>
+                    <li class="fruits-group__element">
+                        <img src="https://media.acc.cv.ua/news/article/2024/02/26/100446/7up7Ivn43ZNDvPeY13RY.w575.jpg" alt="Fruit">
+                        <h3>Orange</h3>
+                    </li>
+                    <li class="fruits-group__element">
+                        <img src="https://media.acc.cv.ua/news/article/2024/02/26/100446/7up7Ivn43ZNDvPeY13RY.w575.jpg" alt="Fruit">
+                        <h3>Pear</h3>
+                    </li>
+                    <li class="fruits-group__element">
+                        <img src="https://media.acc.cv.ua/news/article/2024/02/26/100446/7up7Ivn43ZNDvPeY13RY.w575.jpg" alt="Fruit">
+                        <h3>Grape</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="hw-group__element">
+                <ul class="lazy-group">
+                    <li>
+                        <img class="lazy-group__img" src="" data-src="https://plus.unsplash.com/premium_photo-1688645554172-d3aef5f837ce?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJTIwbW91bnRhaW5zfGVufDB8fDB8fHww" alt="Mountain">
+                    </li>
+                    <li>
+                        <img class="lazy-group__img" src="" data-src="https://plus.unsplash.com/premium_photo-1688645554172-d3aef5f837ce?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJTIwbW91bnRhaW5zfGVufDB8fDB8fHww" alt="Mountain">
+                    </li>
+                    <li>
+                        <img class="lazy-group__img" src="" data-src="https://plus.unsplash.com/premium_photo-1688645554172-d3aef5f837ce?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJTIwbW91bnRhaW5zfGVufDB8fDB8fHww" alt="Mountain">
+                    </li>
+                    <li>
+                        <img class="lazy-group__img" src="" data-src="https://plus.unsplash.com/premium_photo-1688645554172-d3aef5f837ce?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJTIwbW91bnRhaW5zfGVufDB8fDB8fHww" alt="Mountain">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
