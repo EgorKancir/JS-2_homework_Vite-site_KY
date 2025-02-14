@@ -14,6 +14,7 @@ export default defineConfig({
                 index6: resolve(__dirname, "index6.html"),
                 index7: resolve(__dirname, "index7.html"),
                 index8: resolve(__dirname, "index8.html")
+                
             }
         }
     }
